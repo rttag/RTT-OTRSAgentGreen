@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+
+RTT-OTRSAgentGreen
+
+Copyright (C) 2014 Realtime Technology AG, http://rtt.ag/
+
+Author: Martin Gross <martin.gross@rtt.ag>
+License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+-->
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="Loader::Agent::Skin###100-rtt" Required="0" Valid="1">
+        <Description Translatable="1">RTT-green Agent skin</Description>
+        <Group>Framework</Group>
+        <Setting>
+            <Hash>
+                <Item Key="InternalName">rtt</Item>
+                <Item Key="VisibleName">RTT</Item>
+                <Item Key="Descriptio">RTT-green Agent skin</Item>
+                <Item Key="Homepage">http://rtt.ag/</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

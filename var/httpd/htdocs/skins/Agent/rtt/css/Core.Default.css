@@ -1,0 +1,158 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @author      Martin Gross
+ * @copyright   RTT AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "RTT"
+ * @section     Skin overrides
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  Color
+
+ */
+
+a,
+span.Pagination a:hover {
+    color: #b8cf00;
+}
+
+.Admin .Size1of2 h4 {
+    color: #b8cf00 !important;
+}
+
+.AdminPerformanceLog .Progressbar {
+    background-color: #b8cf00;
+}
+
+a:hover,
+a:active,
+a:focus,
+#ToolBar a.Active {
+    color: #bed600;
+}
+
+.Admin .Size1of2:hover h4 {
+    color: #a2b600 !important;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+input.Focus,
+textarea.Focus  {
+    border-color: #b8cf00;
+}
+
+/**
+ * @subsection  Navigation
+ * @note        the default navigation_sprite is transparent and has a transparent reddish
+ *              gradient overlay. This works with some colors so you only have to change the
+ *              background color of the li items and the anchors on hover. In this case the
+ *              red overlay doesn't fit, so changed the main sprite too.
+ */
+
+#Navigation > .Selected,
+#Navigation > .Selected > a,
+#Navigation > li:hover,
+#Navigation > li:hover > a {
+    background-color: #b8cf00;
+}
+
+#Navigation > .Selected {
+    -webkit-box-shadow: inset 1px 1px 1px 0px #b8cf00, inset -1px -1px 1px 0px #b8cf00;
+    box-shadow: inset 1px 1px 1px 0px #b8cf00, inset -1px -1px 1px 0px #b8cf00;
+    border: 1px solid #c3d914;
+}
+
+
+#Navigation > li:hover > span {
+    background-color: #c3d914;
+}
+
+/**
+ * @subsection  Overviews
+ */
+
+.OverviewMedium li:hover table.Infos td label,
+.OverviewLarge > li:hover .Infos table label {
+    color: #a2b600;
+}
+
+.OverviewLarge li:hover .Infos table td,
+.OverviewLarge li:hover .Infos table tr.Middle {
+    border-color: #a2b600;
+}
+
+.OverviewLarge > li:hover .Preview > ul {
+    border-color: #c6db1f #c6db1f #c6db1f #7B7670;
+}
+
+.Actions li a:hover,
+.Actions li span:hover,
+.OverviewZoom a:hover {
+    border-left-color: #c1d80a;
+    border-right-color: #adc300;
+}
+
+/**
+ * @subsection  Messages
+ */
+
+.MessageBox.Notice {
+    border-color: #a2b600;
+    background: #b8cf00;
+}
+
+.MessageBox.Notice p {
+    border-color: #c8dd29;
+}
+
+.MessageBox.Notice p,
+.MessageBox.Notice a {
+    color: #758300;
+}
+
+/**
+ * @subsection  Gradients
+ */
+
+#Navigation > .Active > ul > li:hover,
+.ControlRow li:hover,
+.ControlRow li.Active:hover,
+.ControlRow li:hover > a,
+.ControlRow li:active > a,
+.OverviewMedium li:hover div.Content,
+.OverviewLarge > li:hover > .Content,
+.OverviewLarge > li:hover .Shadow,
+.Actions li a:hover,
+.Actions li span:hover,
+.OverviewZoom a:hover,
+.DataTable tbody tr:hover td,
+.TableSmall tbody tr:hover td,
+.DataTable tbody tr:hover td,
+.TableSmall tbody tr:hover td {
+    background: #D8E666;
+    background: -moz-linear-gradient(top,  #D8E666 0%, #cbde33 20%, #c1d80a 51%, #b3c900 51%, #adc300 95%, #a7bc00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D8E666), color-stop(20%,#cbde33), color-stop(51%,#c1d80a), color-stop(51%,#b3c900), color-stop(95%,#adc300), color-stop(100%,#a7bc00));
+    background: -webkit-linear-gradient(top,  #D8E666 0%,#cbde33 20%,#c1d80a 51%,#b3c900 51%,#adc300 95%,#a7bc00 100%);
+    background: -o-linear-gradient(top,  #D8E666 0%,#cbde33 20%,#c1d80a 51%,#b3c900 51%,#adc300 95%,#a7bc00 100%);
+    background: -ms-linear-gradient(top,  #D8E666 0%,#cbde33 20%,#c1d80a 51%,#b3c900 51%,#adc300 95%,#a7bc00 100%);
+    background: linear-gradient(to bottom,  #D8E666 0%,#cbde33 20%,#c1d80a 51%,#b3c900 51%,#adc300 95%,#a7bc00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D8E666', endColorstr='#a7bc00',GradientType=0 );
+}
+
+/**
+ * @subsection  Image Replacements
+ */
+
+.Dialog.Alert span.Icon {
+    background-image: url(../img/dialog_alert.png);
+}
+
+} /* end @media */
