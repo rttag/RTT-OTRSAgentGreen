@@ -16,7 +16,7 @@ PARTICULAR PURPOSE.
 -->
 <otrs_package version="1.0">
     <Name>RTT-OTRSAgentGreen</Name>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Framework>3.3.x</Framework>
     <Vendor>Realtime Technology AG</Vendor>
     <URL>http://rtt.ag/</URL>
@@ -24,17 +24,9 @@ PARTICULAR PURPOSE.
     <Description Lang="en">RTT-green Agent skin</Description>
     <Description Lang="de">RTT-gruenes Agenten-Skin</Description>
     <ChangeLog Version="1.0.0" Date="2014-03-10 14:45:00 +0100">Initial release for OTRS 3.3.x</ChangeLog>
+    <ChangeLog Version="1.0.1" Date="2014-11-27 15:25:00 +0100">Removal of RTT-logos</ChangeLog>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/RTT-OTRSAgentGreen.xml"/>
         <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/css/Core.Default.css"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_admin.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_admin_test.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_agent.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_agent_test.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_customer.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_customer_test.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/logo_rtt_pdf.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/RTT_CL_Z_2012_RGB_inverted.png"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/rtt/img/RTT_CL_Z_2012_RGB.png"/>
     </Filelist>
 </otrs_package>
